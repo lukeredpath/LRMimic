@@ -17,7 +17,7 @@ describe(@"LRMimic", ^{
 
   beforeAll(^{
     serverURL = [NSURL URLWithString:@"http://localhost:11988"];
-    mimic = [LRMimic mimicOnHost:@"localhost" port:11988];
+    mimic = [[LRMimic alloc] initWithServerURL:serverURL];
   });
   
   beforeEach(^{
