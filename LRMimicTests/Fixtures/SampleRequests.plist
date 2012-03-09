@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>stubs</key>
+	<array>
+		<dict>
+			<key>method</key>
+			<string>GET</string>
+			<key>path</key>
+			<string>/example</string>
+			<key>status</key>
+			<integer>200</integer>
+			<key>body</key>
+			<string>Response from fixture file</string>
+		</dict>
+	</array>
+</dict>
+</plist>

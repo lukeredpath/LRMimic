@@ -16,6 +16,8 @@
 		A30282BF15097DE600E4B91F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A30282BD15097DE600E4B91F /* InfoPlist.strings */; };
 		A330DF521509A806009918BC /* LRMimicSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = A330DF511509A806009918BC /* LRMimicSpecs.m */; };
 		A330DF561509A844009918BC /* RequestHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A330DF551509A844009918BC /* RequestHelpers.m */; };
+		A330DF591509B597009918BC /* SampleRequests.plist in Resources */ = {isa = PBXBuildFile; fileRef = A330DF581509B597009918BC /* SampleRequests.plist */; };
+		A330DF5C1509B693009918BC /* FixtureHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A330DF5B1509B693009918BC /* FixtureHelpers.m */; };
 		A368F8221509A755008EBD5A /* Pods-test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A368F8211509A755008EBD5A /* Pods-test.xcconfig */; };
 		A368F8241509A762008EBD5A /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A368F8231509A762008EBD5A /* libPods-test.a */; };
 /* End PBXBuildFile section */
@@ -46,6 +48,9 @@
 		A330DF531509A815009918BC /* SpecHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecHelper.h; sourceTree = "<group>"; };
 		A330DF541509A844009918BC /* RequestHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestHelpers.h; sourceTree = "<group>"; };
 		A330DF551509A844009918BC /* RequestHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestHelpers.m; sourceTree = "<group>"; };
+		A330DF581509B597009918BC /* SampleRequests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SampleRequests.plist; sourceTree = "<group>"; };
+		A330DF5A1509B693009918BC /* FixtureHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixtureHelpers.h; sourceTree = "<group>"; };
+		A330DF5B1509B693009918BC /* FixtureHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixtureHelpers.m; sourceTree = "<group>"; };
 		A368F8211509A755008EBD5A /* Pods-test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = SOURCE_ROOT; };
 		A368F8231509A762008EBD5A /* libPods-test.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-test.a"; path = "../Pods/build/Release-iphoneos/libPods-test.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +133,7 @@
 				A330DF531509A815009918BC /* SpecHelper.h */,
 				A330DF501509A806009918BC /* Specs */,
 				A330DF4E1509A7B9009918BC /* Helpers */,
+				A330DF571509B56D009918BC /* Fixtures */,
 				A30282BB15097DE600E4B91F /* Supporting Files */,
 			);
 			path = LRMimicTests;
@@ -147,6 +153,8 @@
 		A330DF4E1509A7B9009918BC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				A330DF5A1509B693009918BC /* FixtureHelpers.h */,
+				A330DF5B1509B693009918BC /* FixtureHelpers.m */,
 				A330DF541509A844009918BC /* RequestHelpers.h */,
 				A330DF551509A844009918BC /* RequestHelpers.m */,
 			);
@@ -159,6 +167,14 @@
 				A330DF511509A806009918BC /* LRMimicSpecs.m */,
 			);
 			path = Specs;
+			sourceTree = "<group>";
+		};
+		A330DF571509B56D009918BC /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				A330DF581509B597009918BC /* SampleRequests.plist */,
+			);
+			path = Fixtures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +261,7 @@
 			files = (
 				A30282BF15097DE600E4B91F /* InfoPlist.strings in Resources */,
 				A368F8221509A755008EBD5A /* Pods-test.xcconfig in Resources */,
+				A330DF591509B597009918BC /* SampleRequests.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +312,7 @@
 			files = (
 				A330DF521509A806009918BC /* LRMimicSpecs.m in Sources */,
 				A330DF561509A844009918BC /* RequestHelpers.m in Sources */,
+				A330DF5C1509B693009918BC /* FixtureHelpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

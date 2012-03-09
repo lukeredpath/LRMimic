@@ -12,6 +12,7 @@
 #define EXP_SHORTHAND
 #import "Expecta.h"
 #import "Specta.h"
+#import "FixtureHelpers.h"
 #import "RequestHelpers.h"
 
 #endif

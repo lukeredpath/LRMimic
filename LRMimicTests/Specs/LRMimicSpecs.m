@@ -117,6 +117,15 @@ describe(@"LRMimic", ^{
       expect(responseBody).toEqual(@"");
     });
   });
+  
+  it(@"stubs requests configured in a plist file", ^{
+    [mimic stubRequestsUsingFixtureFile:pathForFixture(@"SampleRequests", @"plist")];
+    
+    performRequest(serverURL, @"GET", @"/example", ^(NSHTTPURLResponse *response, NSString *responseBody) {
+      expect(response.statusCode).toEqual(200);
+      expect(responseBody).toEqual(@"Response from fixture file");
+    });
+	});
 });
 
 SpecEnd

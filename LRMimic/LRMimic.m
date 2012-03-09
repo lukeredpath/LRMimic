@@ -10,6 +10,7 @@
 
 @interface LRMimic ()
 - (void)commitStubs:(LRMimicStubs *)stub;
+- (void)commitStubsFromPropertyListData:(NSDictionary *)dictionary;
 - (NSMutableURLRequest *)mutableAPIRequestForPath:(NSString *)path;
 - (void)performRequest:(NSURLRequest *)request expectedStatusCode:(NSUInteger)expectedStatusCode;
 @end
@@ -46,14 +47,24 @@
   [self performRequest:request expectedStatusCode:200];
 }
 
+- (void)stubRequestsUsingFixtureFile:(NSString *)filePath
+{
+  NSDictionary *fixtureStubs = [NSDictionary dictionaryWithContentsOfFile:filePath];
+  [self commitStubsFromPropertyListData:fixtureStubs];
+}
+
 #pragma mark - Private methods
 
 - (void)commitStubs:(LRMimicStubs *)stub
 {
   NSDictionary *requestData = [NSDictionary dictionaryWithObject:[stub arrayValue] forKey:@"stubs"];
+  [self commitStubsFromPropertyListData:requestData];
+}
 
+- (void)commitStubsFromPropertyListData:(NSDictionary *)dictionary
+{
   NSMutableURLRequest *request = [self mutableAPIRequestForPath:@"/api/multi"];
-  [request setHTTPBody:[NSPropertyListSerialization dataFromPropertyList:requestData format:NSPropertyListXMLFormat_v1_0 errorDescription:nil]];
+  [request setHTTPBody:[NSPropertyListSerialization dataFromPropertyList:dictionary format:NSPropertyListXMLFormat_v1_0 errorDescription:nil]];
   [request setValue:@"application/plist" forHTTPHeaderField:@"Content-Type"];
   
   [self performRequest:request expectedStatusCode:201];

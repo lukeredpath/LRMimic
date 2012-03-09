@@ -18,6 +18,7 @@ typedef void (^LRMimicRespondToBlock)(LRMimicStubs *);
 + (id)mimicOnHost:(NSString *)host port:(NSUInteger)port;
 - (id)initWithServerURL:(NSURL *)serverURL;
 - (void)respondTo:(LRMimicRespondToBlock)respondToBlock;
+- (void)stubRequestsUsingFixtureFile:(NSString *)filePath;
 - (void)reset;
 
 @end
