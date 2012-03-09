@@ -1,4 +1,17 @@
 GIT
+  remote: git://github.com/CocoaPods/CocoaPods.git
+  revision: ea918cd90a52747f0820fa711679f91146594b9d
+  specs:
+    cocoapods (0.5.1)
+      xcodeproj (~> 0.1.0)
+
+GIT
+  remote: git://github.com/CocoaPods/Xcodeproj.git
+  revision: 70f7f73436236b993f1f889de1f5fae622a784db
+  specs:
+    xcodeproj (0.1.0)
+
+GIT
   remote: git://github.com/lukeredpath/mimic.git
   revision: b7c48ae970fce2f8c7a5e99e1e284ce36a19a6b0
   branch: develop
@@ -28,5 +41,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  cocoapods!
   daemons
   mimic!
+  xcodeproj!
