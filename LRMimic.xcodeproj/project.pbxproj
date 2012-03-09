@@ -14,7 +14,8 @@
 		A30282B615097DE600E4B91F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30282A415097DE600E4B91F /* Foundation.framework */; };
 		A30282B915097DE600E4B91F /* libLRMimic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A30282A115097DE600E4B91F /* libLRMimic.a */; };
 		A30282BF15097DE600E4B91F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A30282BD15097DE600E4B91F /* InfoPlist.strings */; };
-		A30282C215097DE600E4B91F /* LRMimicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A30282C115097DE600E4B91F /* LRMimicTests.m */; };
+		A330DF521509A806009918BC /* LRMimicSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = A330DF511509A806009918BC /* LRMimicSpecs.m */; };
+		A330DF561509A844009918BC /* RequestHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A330DF551509A844009918BC /* RequestHelpers.m */; };
 		A368F8221509A755008EBD5A /* Pods-test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A368F8211509A755008EBD5A /* Pods-test.xcconfig */; };
 		A368F8241509A762008EBD5A /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A368F8231509A762008EBD5A /* libPods-test.a */; };
 /* End PBXBuildFile section */
@@ -41,7 +42,10 @@
 		A30282B415097DE600E4B91F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		A30282BC15097DE600E4B91F /* LRMimicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LRMimicTests-Info.plist"; sourceTree = "<group>"; };
 		A30282BE15097DE600E4B91F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A30282C115097DE600E4B91F /* LRMimicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRMimicTests.m; sourceTree = "<group>"; };
+		A330DF511509A806009918BC /* LRMimicSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRMimicSpecs.m; sourceTree = "<group>"; };
+		A330DF531509A815009918BC /* SpecHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecHelper.h; sourceTree = "<group>"; };
+		A330DF541509A844009918BC /* RequestHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestHelpers.h; sourceTree = "<group>"; };
+		A330DF551509A844009918BC /* RequestHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestHelpers.m; sourceTree = "<group>"; };
 		A368F8211509A755008EBD5A /* Pods-test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = SOURCE_ROOT; };
 		A368F8231509A762008EBD5A /* libPods-test.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-test.a"; path = "../Pods/build/Release-iphoneos/libPods-test.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,7 +125,9 @@
 		A30282BA15097DE600E4B91F /* LRMimicTests */ = {
 			isa = PBXGroup;
 			children = (
-				A30282C115097DE600E4B91F /* LRMimicTests.m */,
+				A330DF531509A815009918BC /* SpecHelper.h */,
+				A330DF501509A806009918BC /* Specs */,
+				A330DF4E1509A7B9009918BC /* Helpers */,
 				A30282BB15097DE600E4B91F /* Supporting Files */,
 			);
 			path = LRMimicTests;
@@ -136,6 +142,23 @@
 				A30282BD15097DE600E4B91F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A330DF4E1509A7B9009918BC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A330DF541509A844009918BC /* RequestHelpers.h */,
+				A330DF551509A844009918BC /* RequestHelpers.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A330DF501509A806009918BC /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				A330DF511509A806009918BC /* LRMimicSpecs.m */,
+			);
+			path = Specs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +293,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A30282C215097DE600E4B91F /* LRMimicTests.m in Sources */,
+				A330DF521509A806009918BC /* LRMimicSpecs.m in Sources */,
+				A330DF561509A844009918BC /* RequestHelpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
