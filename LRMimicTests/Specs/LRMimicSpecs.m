@@ -109,8 +109,7 @@ describe(@"LRMimic", ^{
   
   it(@"stubs requests to return a 200 with an empty body if nothing specified", ^{
     [mimic respondTo:^(LRMimicStub *stub) {
-      [stub get:@"/example" itReturns:^(LRMimicStubResponse *response) {
-      }];
+      [stub get:@"/example" itReturns:^(LRMimicStubResponse *response) {}];
     }];
     
     performRequest(serverURL, @"GET", @"/example", ^(NSHTTPURLResponse *response, NSString *responseBody) {
