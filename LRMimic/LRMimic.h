@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <Availability.h>
 
-@class LRMimicStub;
+@class LRMimicStubs;
 
-typedef void (^LRMimicRespondToBlock)(LRMimicStub *);
+typedef void (^LRMimicRespondToBlock)(LRMimicStubs *);
 
 @interface LRMimic : NSObject
 
@@ -26,7 +26,7 @@ typedef void (^LRMimicRespondToBlock)(LRMimicStub *);
 
 typedef void (^LRMimicStubResponseBlock)(LRMimicStubResponse *);
 
-@interface LRMimicStub : NSObject
+@interface LRMimicStubs : NSObject
 
 - (void)get:(NSString *)path itReturns:(LRMimicStubResponseBlock)responseBlock;
 - (void)post:(NSString *)path itReturns:(LRMimicStubResponseBlock)responseBlock;

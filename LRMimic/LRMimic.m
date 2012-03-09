@@ -9,7 +9,7 @@
 #import "LRMimic.h"
 
 @interface LRMimic ()
-- (void)commitStubs:(LRMimicStub *)stub;
+- (void)commitStubs:(LRMimicStubs *)stub;
 - (NSMutableURLRequest *)mutableAPIRequestForPath:(NSString *)path;
 - (void)performRequest:(NSURLRequest *)request expectedStatusCode:(NSUInteger)expectedStatusCode;
 @end
@@ -35,9 +35,9 @@
 
 - (void)respondTo:(LRMimicRespondToBlock)respondToBlock
 {
-  LRMimicStub *stub = [[LRMimicStub alloc] init];
-  respondToBlock(stub);
-  [self commitStubs:stub];
+  LRMimicStubs *stubs = [[LRMimicStubs alloc] init];
+  respondToBlock(stubs);
+  [self commitStubs:stubs];
 }
 
 - (void)reset
@@ -48,7 +48,7 @@
 
 #pragma mark - Private methods
 
-- (void)commitStubs:(LRMimicStub *)stub
+- (void)commitStubs:(LRMimicStubs *)stub
 {
   NSDictionary *requestData = [NSDictionary dictionaryWithObject:[stub arrayValue] forKey:@"stubs"];
 
@@ -84,13 +84,13 @@
 
 #pragma mark -
 
-@interface LRMimicStub ()
+@interface LRMimicStubs ()
 - (void)stubForPath:(NSString *)path 
          HTTPMethod:(NSString *)HTTPMethod 
          usingBlock:(LRMimicStubResponseBlock)block;
 @end
 
-@implementation LRMimicStub {
+@implementation LRMimicStubs {
   NSMutableArray *_responseStubs;
 }
 
