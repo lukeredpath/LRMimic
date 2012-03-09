@@ -4,7 +4,7 @@
 
 Whilst Mimic is written in Ruby, it can be run as a standalone component without any pre-configured request stubs and be configured dynamically using it's embedded REST API (see the Mimic README for more information).
 
-Mimic currently has a rough implementation of an Objective-C wrapper for it's REST API. This is an attempt to build a better, more fluent API.
+Mimic currently used to ship with a rough implementation of an Objective-C wrapper for it's REST API. This is an attempt to build a better, more fluent API.
 
 ## Usage
 
