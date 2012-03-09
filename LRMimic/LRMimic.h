@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Availability.h>
 
 @class LRMimicStub;
 
@@ -42,6 +43,11 @@ typedef void (^LRMimicStubResponseBlock)(LRMimicStubResponse *);
 - (void)setStatus:(NSUInteger)status;
 - (void)setBody:(NSString *)body;
 - (void)setValue:(NSString *)value forHTTPHeaderField:(NSString *)field;
+
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_5_0
+- (void)setJSONBody:(id)object;
+#endif
+
 - (NSDictionary *)dictionaryValue;
 
 @end

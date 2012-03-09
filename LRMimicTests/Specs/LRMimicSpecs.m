@@ -86,9 +86,34 @@ describe(@"LRMimic", ^{
       expect(responseBody).toEqual(@"This is my response");
       expect([[response allHeaderFields] objectForKey:@"Content-Type"]).toEqual(@"text/plain");
     });
-
 	});
-
+  
+  it(@"stubs requests to return JSON", ^{
+    [mimic respondTo:^(LRMimicStub *stub) {
+      [stub get:@"/example" itReturns:^(LRMimicStubResponse *response) {
+        [response setStatus:200];
+        [response setJSONBody:[NSDictionary dictionaryWithObject:@"bar" forKey:@"foo"]];
+      }];
+    }];
+    
+    performRequest(serverURL, @"GET", @"/example", ^(NSHTTPURLResponse *response, NSString *responseBody) {
+      expect(response.statusCode).toEqual(200);
+      expect(responseBody).toEqual(@"{\"foo\":\"bar\"}");
+      expect([[response allHeaderFields] objectForKey:@"Content-Type"]).toEqual(@"application/json");
+    });
+	});
+  
+  it(@"stubs requests to return a 200 with an empty body if nothing specified", ^{
+    [mimic respondTo:^(LRMimicStub *stub) {
+      [stub get:@"/example" itReturns:^(LRMimicStubResponse *response) {
+      }];
+    }];
+    
+    performRequest(serverURL, @"GET", @"/example", ^(NSHTTPURLResponse *response, NSString *responseBody) {
+      expect(response.statusCode).toEqual(200);
+      expect(responseBody).toEqual(@"");
+    });
+  });
 });
 
 SpecEnd

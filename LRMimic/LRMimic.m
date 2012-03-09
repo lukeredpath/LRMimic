@@ -159,6 +159,8 @@
     _HTTPMethod = HTTPMethod;
     _path = path;
     _headers = [[NSMutableDictionary alloc] init];
+    _body = @"";
+    _status = 200;
   }
   return self;
 }
@@ -172,6 +174,18 @@
 {
   _body = body;
 }
+
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_5_0
+
+- (void)setJSONBody:(id)object
+{
+  NSData *JSONData = [NSJSONSerialization dataWithJSONObject:object options:0 error:nil];
+  NSString *JSONString = [[NSString alloc] initWithData:JSONData encoding:NSUTF8StringEncoding];
+  [self setBody:JSONString];
+  [self setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+}
+
+#endif
 
 - (void)setValue:(NSString *)value forHTTPHeaderField:(NSString *)field
 {
