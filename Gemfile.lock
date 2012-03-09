@@ -1,0 +1,32 @@
+GIT
+  remote: git://github.com/lukeredpath/mimic.git
+  revision: b7c48ae970fce2f8c7a5e99e1e284ce36a19a6b0
+  branch: develop
+  specs:
+    mimic (0.4.3)
+      json
+      plist
+      rack
+      sinatra
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    daemons (1.1.8)
+    json (1.6.5)
+    plist (3.1.0)
+    rack (1.4.1)
+    rack-protection (1.2.0)
+      rack
+    sinatra (1.3.2)
+      rack (~> 1.3, >= 1.3.6)
+      rack-protection (~> 1.2)
+      tilt (~> 1.3, >= 1.3.3)
+    tilt (1.3.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  daemons
+  mimic!

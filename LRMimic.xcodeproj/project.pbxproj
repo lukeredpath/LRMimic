@@ -30,15 +30,14 @@
 /* Begin PBXFileReference section */
 		A30282A115097DE600E4B91F /* libLRMimic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLRMimic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30282A415097DE600E4B91F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A30282A815097DE600E4B91F /* LRMimic-Prefix.pch */ = {isa = PBXFileReference; path = "LRMimic-Prefix.pch"; sourceTree = "<group>"; };
-		A30282A915097DE600E4B91F /* LRMimic.h */ = {isa = PBXFileReference; path = LRMimic.h; sourceTree = "<group>"; };
+		A30282A815097DE600E4B91F /* LRMimic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LRMimic-Prefix.pch"; sourceTree = "<group>"; };
+		A30282A915097DE600E4B91F /* LRMimic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRMimic.h; sourceTree = "<group>"; };
 		A30282AA15097DE600E4B91F /* LRMimic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRMimic.m; sourceTree = "<group>"; };
 		A30282B115097DE600E4B91F /* LRMimicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LRMimicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30282B215097DE600E4B91F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		A30282B415097DE600E4B91F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		A30282BC15097DE600E4B91F /* LRMimicTests-Info.plist */ = {isa = PBXFileReference; path = "LRMimicTests-Info.plist"; sourceTree = "<group>"; };
+		A30282BC15097DE600E4B91F /* LRMimicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LRMimicTests-Info.plist"; sourceTree = "<group>"; };
 		A30282BE15097DE600E4B91F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A30282C015097DE600E4B91F /* LRMimicTests.h */ = {isa = PBXFileReference; path = LRMimicTests.h; sourceTree = "<group>"; };
 		A30282C115097DE600E4B91F /* LRMimicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRMimicTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +114,6 @@
 		A30282BA15097DE600E4B91F /* LRMimicTests */ = {
 			isa = PBXGroup;
 			children = (
-				A30282C015097DE600E4B91F /* LRMimicTests.h */,
 				A30282C115097DE600E4B91F /* LRMimicTests.m */,
 				A30282BB15097DE600E4B91F /* Supporting Files */,
 			);
