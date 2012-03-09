@@ -25,8 +25,8 @@ describe(@"LRMimic", ^{
   });
   
   it(@"stubs GET requests to return a fixed response", ^{
-    [mimic respondTo:^(LRMimicStubs *stub) {
-      [stub get:@"/example" itReturns:^(LRMimicStubResponse *response) {
+    [mimic respondTo:^(LRMimicStubs *stubs) {
+      [stubs get:@"/example" itReturns:^(LRMimicStubResponse *response) {
         [response setStatus:200];
         [response setBody:@"This is my response"];
         [response setValue:@"text/plain" forHTTPHeaderField:@"Content-Type"];
@@ -41,8 +41,8 @@ describe(@"LRMimic", ^{
 	});
   
   it(@"stubs POST requests to return a fixed response", ^{
-    [mimic respondTo:^(LRMimicStubs *stub) {
-      [stub post:@"/example" itReturns:^(LRMimicStubResponse *response) {
+    [mimic respondTo:^(LRMimicStubs *stubs) {
+      [stubs post:@"/example" itReturns:^(LRMimicStubResponse *response) {
         [response setStatus:201];
         [response setBody:@"This is my response"];
         [response setValue:@"text/plain" forHTTPHeaderField:@"Content-Type"];
@@ -57,8 +57,8 @@ describe(@"LRMimic", ^{
 	});
   
   it(@"stubs PUT requests to return a fixed response", ^{
-    [mimic respondTo:^(LRMimicStubs *stub) {
-      [stub put:@"/example" itReturns:^(LRMimicStubResponse *response) {
+    [mimic respondTo:^(LRMimicStubs *stubs) {
+      [stubs put:@"/example" itReturns:^(LRMimicStubResponse *response) {
         [response setStatus:200];
         [response setBody:@"This is my response"];
         [response setValue:@"text/plain" forHTTPHeaderField:@"Content-Type"];
@@ -73,8 +73,8 @@ describe(@"LRMimic", ^{
 	});
   
   it(@"stubs DELETE requests to return a fixed response", ^{
-    [mimic respondTo:^(LRMimicStubs *stub) {
-      [stub delete:@"/example" itReturns:^(LRMimicStubResponse *response) {
+    [mimic respondTo:^(LRMimicStubs *stubs) {
+      [stubs delete:@"/example" itReturns:^(LRMimicStubResponse *response) {
         [response setStatus:200];
         [response setBody:@"This is my response"];
         [response setValue:@"text/plain" forHTTPHeaderField:@"Content-Type"];
@@ -91,8 +91,8 @@ describe(@"LRMimic", ^{
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_5_0
   
   it(@"stubs requests to return JSON", ^{
-    [mimic respondTo:^(LRMimicStubs *stub) {
-      [stub get:@"/example" itReturns:^(LRMimicStubResponse *response) {
+    [mimic respondTo:^(LRMimicStubs *stubs) {
+      [stubs get:@"/example" itReturns:^(LRMimicStubResponse *response) {
         [response setStatus:200];
         [response setJSONBody:[NSDictionary dictionaryWithObject:@"bar" forKey:@"foo"]];
       }];
@@ -108,8 +108,8 @@ describe(@"LRMimic", ^{
 #endif
   
   it(@"stubs requests to return a 200 with an empty body if nothing specified", ^{
-    [mimic respondTo:^(LRMimicStubs *stub) {
-      [stub get:@"/example" itReturns:^(LRMimicStubResponse *response) {}];
+    [mimic respondTo:^(LRMimicStubs *stubs) {
+      [stubs get:@"/example" itReturns:^(LRMimicStubResponse *response) {}];
     }];
     
     performRequest(serverURL, @"GET", @"/example", ^(NSHTTPURLResponse *response, NSString *responseBody) {
