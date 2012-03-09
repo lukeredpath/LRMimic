@@ -88,6 +88,8 @@ describe(@"LRMimic", ^{
     });
 	});
   
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_5_0
+  
   it(@"stubs requests to return JSON", ^{
     [mimic respondTo:^(LRMimicStub *stub) {
       [stub get:@"/example" itReturns:^(LRMimicStubResponse *response) {
@@ -102,6 +104,8 @@ describe(@"LRMimic", ^{
       expect([[response allHeaderFields] objectForKey:@"Content-Type"]).toEqual(@"application/json");
     });
 	});
+
+#endif
   
   it(@"stubs requests to return a 200 with an empty body if nothing specified", ^{
     [mimic respondTo:^(LRMimicStub *stub) {
