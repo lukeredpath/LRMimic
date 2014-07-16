@@ -1,0 +1,6 @@
+language: objective-c
+before_install:
+    - ./bin/mimic start
+
+xcode_workspace: LRMimic.xcworkspace
+xcode_scheme: LRMimicTests
