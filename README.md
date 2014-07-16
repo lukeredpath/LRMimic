@@ -1,5 +1,7 @@
 # LRMimic, an Objective-C interface for Mimic
 
+[![Build Status](https://travis-ci.org/cybertk/mimic-objc.svg)](https://travis-ci.org/cybertk/mimic-objc)
+
 [Mimic](http://github.com/lukeredpath/mimic) is a Ruby gem that allows you to create live server stubs for your end-to-end tests.
 
 Whilst Mimic is written in Ruby, it can be run as a standalone component without any pre-configured request stubs and be configured dynamically using it's embedded REST API (see the Mimic README for more information).

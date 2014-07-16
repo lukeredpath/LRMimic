@@ -34,9 +34,9 @@ describe(@"LRMimic", ^{
     }];
     
     performRequest(serverURL, @"GET", @"/example", ^(NSHTTPURLResponse *response, NSString *responseBody) {
-      expect(response.statusCode).toEqual(200);
-      expect(responseBody).toEqual(@"This is my response");
-      expect([[response allHeaderFields] objectForKey:@"Content-Type"]).toEqual(@"text/plain");
+      expect(response.statusCode).equal(200);
+      expect(responseBody).equal(@"This is my response");
+      expect([[response allHeaderFields] objectForKey:@"Content-Type"]).equal(@"text/plain");
     });
 	});
   
@@ -50,9 +50,9 @@ describe(@"LRMimic", ^{
     }];
     
     performRequest(serverURL, @"POST", @"/example", ^(NSHTTPURLResponse *response, NSString *responseBody) {
-      expect(response.statusCode).toEqual(201);
-      expect(responseBody).toEqual(@"This is my response");
-      expect([[response allHeaderFields] objectForKey:@"Content-Type"]).toEqual(@"text/plain");
+      expect(response.statusCode).equal(201);
+      expect(responseBody).equal(@"This is my response");
+      expect([[response allHeaderFields] objectForKey:@"Content-Type"]).equal(@"text/plain");
     });
 	});
   
@@ -66,9 +66,9 @@ describe(@"LRMimic", ^{
     }];
     
     performRequest(serverURL, @"PUT", @"/example", ^(NSHTTPURLResponse *response, NSString *responseBody) {
-      expect(response.statusCode).toEqual(200);
-      expect(responseBody).toEqual(@"This is my response");
-      expect([[response allHeaderFields] objectForKey:@"Content-Type"]).toEqual(@"text/plain");
+      expect(response.statusCode).equal(200);
+      expect(responseBody).equal(@"This is my response");
+      expect([[response allHeaderFields] objectForKey:@"Content-Type"]).equal(@"text/plain");
     });
 	});
   
@@ -82,9 +82,9 @@ describe(@"LRMimic", ^{
     }];
     
     performRequest(serverURL, @"DELETE", @"/example", ^(NSHTTPURLResponse *response, NSString *responseBody) {
-      expect(response.statusCode).toEqual(200);
-      expect(responseBody).toEqual(@"This is my response");
-      expect([[response allHeaderFields] objectForKey:@"Content-Type"]).toEqual(@"text/plain");
+      expect(response.statusCode).equal(200);
+      expect(responseBody).equal(@"This is my response");
+      expect([[response allHeaderFields] objectForKey:@"Content-Type"]).equal(@"text/plain");
     });
 	});
   
@@ -99,9 +99,9 @@ describe(@"LRMimic", ^{
     }];
     
     performRequest(serverURL, @"GET", @"/example", ^(NSHTTPURLResponse *response, NSString *responseBody) {
-      expect(response.statusCode).toEqual(200);
-      expect(responseBody).toEqual(@"{\"foo\":\"bar\"}");
-      expect([[response allHeaderFields] objectForKey:@"Content-Type"]).toEqual(@"application/json");
+      expect(response.statusCode).equal(200);
+      expect(responseBody).equal(@"{\"foo\":\"bar\"}");
+      expect([[response allHeaderFields] objectForKey:@"Content-Type"]).equal(@"application/json");
     });
 	});
 
@@ -113,8 +113,8 @@ describe(@"LRMimic", ^{
     }];
     
     performRequest(serverURL, @"GET", @"/example", ^(NSHTTPURLResponse *response, NSString *responseBody) {
-      expect(response.statusCode).toEqual(200);
-      expect(responseBody).toEqual(@"");
+      expect(response.statusCode).equal(200);
+      expect(responseBody).equal(@"");
     });
   });
   
@@ -122,8 +122,8 @@ describe(@"LRMimic", ^{
     [mimic stubRequestsUsingFixtureFile:pathForFixture(@"SampleRequests", @"plist")];
     
     performRequest(serverURL, @"GET", @"/example", ^(NSHTTPURLResponse *response, NSString *responseBody) {
-      expect(response.statusCode).toEqual(200);
-      expect(responseBody).toEqual(@"Response from fixture file");
+      expect(response.statusCode).equal(200);
+      expect(responseBody).equal(@"Response from fixture file");
     });
 	});
 });

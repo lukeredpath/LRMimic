@@ -1,6 +1,6 @@
-source :rubygems
+source 'https://rubygems.org'
 
-gem "mimic", github: "lukeredpath/mimic", branch: "develop"
+gem "mimic"
 gem "daemons"
-gem "cocoapods", github: "CocoaPods"
-gem "xcodeproj", github: "CocoaPods/Xcodeproj"
+gem "cocoapods"
+

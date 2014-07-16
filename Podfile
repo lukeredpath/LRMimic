@@ -1,6 +1,6 @@
-platform :ios
+platform :ios, '7.0'
 
-target :test do
-  dependency 'Expecta'
-  dependency 'Specta'
+target :LRMimicTests, :exclusive => true do
+  pod 'Expecta'
+  pod 'Specta'
 end

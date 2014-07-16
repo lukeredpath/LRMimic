@@ -9,21 +9,44 @@
 /* Begin PBXBuildFile section */
 		A30282A515097DE600E4B91F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30282A415097DE600E4B91F /* Foundation.framework */; };
 		A30282AB15097DE600E4B91F /* LRMimic.m in Sources */ = {isa = PBXBuildFile; fileRef = A30282AA15097DE600E4B91F /* LRMimic.m */; };
-		A30282B315097DE600E4B91F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30282B215097DE600E4B91F /* SenTestingKit.framework */; };
-		A30282B515097DE600E4B91F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30282B415097DE600E4B91F /* UIKit.framework */; };
-		A30282B615097DE600E4B91F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30282A415097DE600E4B91F /* Foundation.framework */; };
-		A30282B915097DE600E4B91F /* libLRMimic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A30282A115097DE600E4B91F /* libLRMimic.a */; };
-		A30282BF15097DE600E4B91F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A30282BD15097DE600E4B91F /* InfoPlist.strings */; };
-		A330DF521509A806009918BC /* LRMimicSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = A330DF511509A806009918BC /* LRMimicSpecs.m */; };
-		A330DF561509A844009918BC /* RequestHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A330DF551509A844009918BC /* RequestHelpers.m */; };
-		A330DF591509B597009918BC /* SampleRequests.plist in Resources */ = {isa = PBXBuildFile; fileRef = A330DF581509B597009918BC /* SampleRequests.plist */; };
-		A330DF5C1509B693009918BC /* FixtureHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A330DF5B1509B693009918BC /* FixtureHelpers.m */; };
-		A368F8221509A755008EBD5A /* Pods-test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A368F8211509A755008EBD5A /* Pods-test.xcconfig */; };
-		A368F8241509A762008EBD5A /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A368F8231509A762008EBD5A /* libPods-test.a */; };
+		AB8227BB2E554835AC3F8BAF /* libPods-LRMimicTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C731412800DD450ABCEF6DDE /* libPods-LRMimicTests.a */; };
+		CB819725196A7C6900F2E56C /* libLRMimic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A30282A115097DE600E4B91F /* libLRMimic.a */; };
+		CBAB61D3196A73C600B51AC6 /* SampleRequests.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBAB61CA196A73C600B51AC6 /* SampleRequests.plist */; };
+		CBAB61D4196A73C600B51AC6 /* FixtureHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAB61CD196A73C600B51AC6 /* FixtureHelpers.m */; };
+		CBAB61D5196A73C600B51AC6 /* RequestHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAB61CF196A73C600B51AC6 /* RequestHelpers.m */; };
+		CBAB61D6196A73C600B51AC6 /* LRMimicSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAB61D2196A73C600B51AC6 /* LRMimicSpecs.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A30282B715097DE600E4B91F /* PBXContainerItemProxy */ = {
+		CBAB61C4196A736A00B51AC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A302829815097DE600E4B91F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A30282A015097DE600E4B91F;
+			remoteInfo = LRMimic;
+		};
+		CBAB61D7196A768400B51AC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A302829815097DE600E4B91F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A30282A015097DE600E4B91F;
+			remoteInfo = LRMimic;
+		};
+		CBAB61D9196A768400B51AC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A302829815097DE600E4B91F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A30282A015097DE600E4B91F;
+			remoteInfo = LRMimic;
+		};
+		CBAB61DB196A77B400B51AC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A302829815097DE600E4B91F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A30282A015097DE600E4B91F;
+			remoteInfo = LRMimic;
+		};
+		CBAB61DD196A77B400B51AC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A302829815097DE600E4B91F /* Project object */;
 			proxyType = 1;
@@ -39,20 +62,19 @@
 		A30282A815097DE600E4B91F /* LRMimic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LRMimic-Prefix.pch"; sourceTree = "<group>"; };
 		A30282A915097DE600E4B91F /* LRMimic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRMimic.h; sourceTree = "<group>"; };
 		A30282AA15097DE600E4B91F /* LRMimic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRMimic.m; sourceTree = "<group>"; };
-		A30282B115097DE600E4B91F /* LRMimicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LRMimicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30282B215097DE600E4B91F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		A30282B415097DE600E4B91F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		A30282BC15097DE600E4B91F /* LRMimicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LRMimicTests-Info.plist"; sourceTree = "<group>"; };
-		A30282BE15097DE600E4B91F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A330DF511509A806009918BC /* LRMimicSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRMimicSpecs.m; sourceTree = "<group>"; };
-		A330DF531509A815009918BC /* SpecHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecHelper.h; sourceTree = "<group>"; };
-		A330DF541509A844009918BC /* RequestHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestHelpers.h; sourceTree = "<group>"; };
-		A330DF551509A844009918BC /* RequestHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestHelpers.m; sourceTree = "<group>"; };
-		A330DF581509B597009918BC /* SampleRequests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SampleRequests.plist; sourceTree = "<group>"; };
-		A330DF5A1509B693009918BC /* FixtureHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixtureHelpers.h; sourceTree = "<group>"; };
-		A330DF5B1509B693009918BC /* FixtureHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixtureHelpers.m; sourceTree = "<group>"; };
-		A368F8211509A755008EBD5A /* Pods-test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = SOURCE_ROOT; };
-		A368F8231509A762008EBD5A /* libPods-test.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-test.a"; path = "../Pods/build/Release-iphoneos/libPods-test.a"; sourceTree = "<group>"; };
+		A7F429D8D2FB462B96D6E27E /* Pods-LRMimicTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRMimicTests.xcconfig"; path = "Pods/Pods-LRMimicTests.xcconfig"; sourceTree = "<group>"; };
+		C731412800DD450ABCEF6DDE /* libPods-LRMimicTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LRMimicTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAB61BD196A736A00B51AC6 /* LRMimicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LRMimicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAB61C0196A736A00B51AC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../LRMimicTests/Info.plist; sourceTree = "<group>"; };
+		CBAB61CA196A73C600B51AC6 /* SampleRequests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SampleRequests.plist; sourceTree = "<group>"; };
+		CBAB61CC196A73C600B51AC6 /* FixtureHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixtureHelpers.h; sourceTree = "<group>"; };
+		CBAB61CD196A73C600B51AC6 /* FixtureHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixtureHelpers.m; sourceTree = "<group>"; };
+		CBAB61CE196A73C600B51AC6 /* RequestHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestHelpers.h; sourceTree = "<group>"; };
+		CBAB61CF196A73C600B51AC6 /* RequestHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestHelpers.m; sourceTree = "<group>"; };
+		CBAB61D0196A73C600B51AC6 /* SpecHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpecHelper.h; path = LRMimicTests/SpecHelper.h; sourceTree = SOURCE_ROOT; };
+		CBAB61D2196A73C600B51AC6 /* LRMimicSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRMimicSpecs.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,15 +86,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A30282AD15097DE600E4B91F /* Frameworks */ = {
+		CBAB61BA196A736A00B51AC6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A368F8241509A762008EBD5A /* libPods-test.a in Frameworks */,
-				A30282B315097DE600E4B91F /* SenTestingKit.framework in Frameworks */,
-				A30282B515097DE600E4B91F /* UIKit.framework in Frameworks */,
-				A30282B615097DE600E4B91F /* Foundation.framework in Frameworks */,
-				A30282B915097DE600E4B91F /* libLRMimic.a in Frameworks */,
+				CB819725196A7C6900F2E56C /* libLRMimic.a in Frameworks */,
+				AB8227BB2E554835AC3F8BAF /* libPods-LRMimicTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,9 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				A30282A615097DE600E4B91F /* LRMimic */,
-				A30282BA15097DE600E4B91F /* LRMimicTests */,
+				CBAB61BE196A736A00B51AC6 /* LRMimicTests */,
 				A30282A315097DE600E4B91F /* Frameworks */,
 				A30282A215097DE600E4B91F /* Products */,
+				A7F429D8D2FB462B96D6E27E /* Pods-LRMimicTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				A30282A115097DE600E4B91F /* libLRMimic.a */,
-				A30282B115097DE600E4B91F /* LRMimicTests.octest */,
+				CBAB61BD196A736A00B51AC6 /* LRMimicTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +125,7 @@
 				A30282B215097DE600E4B91F /* SenTestingKit.framework */,
 				A30282B415097DE600E4B91F /* UIKit.framework */,
 				0CDCCDA1D2AC42D6BC67D83E /* libPods.a */,
+				C731412800DD450ABCEF6DDE /* libPods-LRMimicTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,55 +148,56 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A30282BA15097DE600E4B91F /* LRMimicTests */ = {
+		CBAB61BE196A736A00B51AC6 /* LRMimicTests */ = {
 			isa = PBXGroup;
 			children = (
-				A330DF531509A815009918BC /* SpecHelper.h */,
-				A330DF501509A806009918BC /* Specs */,
-				A330DF4E1509A7B9009918BC /* Helpers */,
-				A330DF571509B56D009918BC /* Fixtures */,
-				A30282BB15097DE600E4B91F /* Supporting Files */,
+				CBAB61C9196A73C600B51AC6 /* Fixtures */,
+				CBAB61CB196A73C600B51AC6 /* Helpers */,
+				CBAB61D0196A73C600B51AC6 /* SpecHelper.h */,
+				CBAB61D1196A73C600B51AC6 /* Specs */,
+				CBAB61BF196A736A00B51AC6 /* Supporting Files */,
 			);
-			path = LRMimicTests;
+			name = LRMimicTests;
+			path = "LRMimic Tests";
 			sourceTree = "<group>";
 		};
-		A30282BB15097DE600E4B91F /* Supporting Files */ = {
+		CBAB61BF196A736A00B51AC6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A368F8231509A762008EBD5A /* libPods-test.a */,
-				A368F8211509A755008EBD5A /* Pods-test.xcconfig */,
-				A30282BC15097DE600E4B91F /* LRMimicTests-Info.plist */,
-				A30282BD15097DE600E4B91F /* InfoPlist.strings */,
+				CBAB61C0196A736A00B51AC6 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A330DF4E1509A7B9009918BC /* Helpers */ = {
+		CBAB61C9196A73C600B51AC6 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
-				A330DF5A1509B693009918BC /* FixtureHelpers.h */,
-				A330DF5B1509B693009918BC /* FixtureHelpers.m */,
-				A330DF541509A844009918BC /* RequestHelpers.h */,
-				A330DF551509A844009918BC /* RequestHelpers.m */,
+				CBAB61CA196A73C600B51AC6 /* SampleRequests.plist */,
 			);
-			path = Helpers;
-			sourceTree = "<group>";
+			name = Fixtures;
+			path = LRMimicTests/Fixtures;
+			sourceTree = SOURCE_ROOT;
 		};
-		A330DF501509A806009918BC /* Specs */ = {
+		CBAB61CB196A73C600B51AC6 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				A330DF511509A806009918BC /* LRMimicSpecs.m */,
+				CBAB61CC196A73C600B51AC6 /* FixtureHelpers.h */,
+				CBAB61CD196A73C600B51AC6 /* FixtureHelpers.m */,
+				CBAB61CE196A73C600B51AC6 /* RequestHelpers.h */,
+				CBAB61CF196A73C600B51AC6 /* RequestHelpers.m */,
 			);
-			path = Specs;
-			sourceTree = "<group>";
+			name = Helpers;
+			path = LRMimicTests/Helpers;
+			sourceTree = SOURCE_ROOT;
 		};
-		A330DF571509B56D009918BC /* Fixtures */ = {
+		CBAB61D1196A73C600B51AC6 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				A330DF581509B597009918BC /* SampleRequests.plist */,
+				CBAB61D2196A73C600B51AC6 /* LRMimicSpecs.m */,
 			);
-			path = Fixtures;
-			sourceTree = "<group>";
+			name = Specs;
+			path = LRMimicTests/Specs;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -208,24 +230,29 @@
 			productReference = A30282A115097DE600E4B91F /* libLRMimic.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		A30282B015097DE600E4B91F /* LRMimicTests */ = {
+		CBAB61BC196A736A00B51AC6 /* LRMimicTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A30282C815097DE600E4B91F /* Build configuration list for PBXNativeTarget "LRMimicTests" */;
+			buildConfigurationList = CBAB61C6196A736A00B51AC6 /* Build configuration list for PBXNativeTarget "LRMimicTests" */;
 			buildPhases = (
-				A30282AC15097DE600E4B91F /* Sources */,
-				A30282AD15097DE600E4B91F /* Frameworks */,
-				A30282AE15097DE600E4B91F /* Resources */,
-				A30282AF15097DE600E4B91F /* ShellScript */,
+				011FF31EE3484F40A9928E1B /* Check Pods Manifest.lock */,
+				CBAB61B9196A736A00B51AC6 /* Sources */,
+				CBAB61BA196A736A00B51AC6 /* Frameworks */,
+				CBAB61BB196A736A00B51AC6 /* Resources */,
+				FC7F26B7E8A64FC2B1A327F1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A30282B815097DE600E4B91F /* PBXTargetDependency */,
+				CBAB61C5196A736A00B51AC6 /* PBXTargetDependency */,
+				CBAB61D8196A768400B51AC6 /* PBXTargetDependency */,
+				CBAB61DA196A768400B51AC6 /* PBXTargetDependency */,
+				CBAB61DC196A77B400B51AC6 /* PBXTargetDependency */,
+				CBAB61DE196A77B400B51AC6 /* PBXTargetDependency */,
 			);
 			name = LRMimicTests;
-			productName = LRMimicTests;
-			productReference = A30282B115097DE600E4B91F /* LRMimicTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productName = "LRMimic Tests";
+			productReference = CBAB61BD196A736A00B51AC6 /* LRMimicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -233,8 +260,14 @@
 		A302829815097DE600E4B91F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "LJR Software Limited";
+				TargetAttributes = {
+					CBAB61BC196A736A00B51AC6 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = A30282A015097DE600E4B91F;
+					};
+				};
 			};
 			buildConfigurationList = A302829B15097DE600E4B91F /* Build configuration list for PBXProject "LRMimic" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -249,37 +282,37 @@
 			projectRoot = "";
 			targets = (
 				A30282A015097DE600E4B91F /* LRMimic */,
-				A30282B015097DE600E4B91F /* LRMimicTests */,
+				CBAB61BC196A736A00B51AC6 /* LRMimicTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A30282AE15097DE600E4B91F /* Resources */ = {
+		CBAB61BB196A736A00B51AC6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A30282BF15097DE600E4B91F /* InfoPlist.strings in Resources */,
-				A368F8221509A755008EBD5A /* Pods-test.xcconfig in Resources */,
-				A330DF591509B597009918BC /* SampleRequests.plist in Resources */,
+				CBAB61D3196A73C600B51AC6 /* SampleRequests.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A30282AF15097DE600E4B91F /* ShellScript */ = {
+		011FF31EE3484F40A9928E1B /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 		CC1F578AD58246C38EB66181 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -295,6 +328,21 @@
 			shellPath = /bin/sh;
 			shellScript = "";
 		};
+		FC7F26B7E8A64FC2B1A327F1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-LRMimicTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -306,44 +354,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A30282AC15097DE600E4B91F /* Sources */ = {
+		CBAB61B9196A736A00B51AC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A330DF521509A806009918BC /* LRMimicSpecs.m in Sources */,
-				A330DF561509A844009918BC /* RequestHelpers.m in Sources */,
-				A330DF5C1509B693009918BC /* FixtureHelpers.m in Sources */,
+				CBAB61D6196A73C600B51AC6 /* LRMimicSpecs.m in Sources */,
+				CBAB61D4196A73C600B51AC6 /* FixtureHelpers.m in Sources */,
+				CBAB61D5196A73C600B51AC6 /* RequestHelpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A30282B815097DE600E4B91F /* PBXTargetDependency */ = {
+		CBAB61C5196A736A00B51AC6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A30282A015097DE600E4B91F /* LRMimic */;
-			targetProxy = A30282B715097DE600E4B91F /* PBXContainerItemProxy */;
+			targetProxy = CBAB61C4196A736A00B51AC6 /* PBXContainerItemProxy */;
+		};
+		CBAB61D8196A768400B51AC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A30282A015097DE600E4B91F /* LRMimic */;
+			targetProxy = CBAB61D7196A768400B51AC6 /* PBXContainerItemProxy */;
+		};
+		CBAB61DA196A768400B51AC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A30282A015097DE600E4B91F /* LRMimic */;
+			targetProxy = CBAB61D9196A768400B51AC6 /* PBXContainerItemProxy */;
+		};
+		CBAB61DC196A77B400B51AC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A30282A015097DE600E4B91F /* LRMimic */;
+			targetProxy = CBAB61DB196A77B400B51AC6 /* PBXContainerItemProxy */;
+		};
+		CBAB61DE196A77B400B51AC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A30282A015097DE600E4B91F /* LRMimic */;
+			targetProxy = CBAB61DD196A77B400B51AC6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		A30282BD15097DE600E4B91F /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A30282BE15097DE600E4B91F /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A30282C315097DE600E4B91F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -354,10 +416,14 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -366,15 +432,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -387,6 +461,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LRMimic/LRMimic-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -400,46 +476,84 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LRMimic/LRMimic-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		A30282C915097DE600E4B91F /* Debug */ = {
+		CBAB61C7196A736A00B51AC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A368F8211509A755008EBD5A /* Pods-test.xcconfig */;
+			baseConfigurationReference = A7F429D8D2FB462B96D6E27E /* Pods-LRMimicTests.xcconfig */;
 			buildSettings = {
-				DSTROOT = /tmp/xcodeproj.dst;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(inherited)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LRMimic/LRMimic-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "LRMimicTests/LRMimicTests-Info.plist";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = LRMimicTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
-		A30282CA15097DE600E4B91F /* Release */ = {
+		CBAB61C8196A736A00B51AC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7F429D8D2FB462B96D6E27E /* Pods-LRMimicTests.xcconfig */;
 			buildSettings = {
-				DSTROOT = /tmp/xcodeproj.dst;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(inherited)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LRMimic/LRMimic-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "LRMimicTests/LRMimicTests-Info.plist";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = LRMimicTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -464,11 +578,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A30282C815097DE600E4B91F /* Build configuration list for PBXNativeTarget "LRMimicTests" */ = {
+		CBAB61C6196A736A00B51AC6 /* Build configuration list for PBXNativeTarget "LRMimicTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A30282C915097DE600E4B91F /* Debug */,
-				A30282CA15097DE600E4B91F /* Release */,
+				CBAB61C7196A736A00B51AC6 /* Debug */,
+				CBAB61C8196A736A00B51AC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
